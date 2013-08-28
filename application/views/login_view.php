@@ -51,8 +51,8 @@
   			<?php //echo form_error('check_database'); ?>
           <div class="control-group">
             <label class="control-label" for="inputName"><i class="icon-user"></i></label>
-            <div class="controls"><span class="error"><?php echo form_error('username'); ?></span>
-              <input name="username" type="text" id="inputName" placeholder="Username">
+            <div class="controls"><span class="error"><?php echo form_error('email'); ?></span>
+              <input name="email" type="text" id="inputName" placeholder="Email Address">
             </div>
           </div>
           <div class="control-group">

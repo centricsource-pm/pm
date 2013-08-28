@@ -5,7 +5,7 @@ class Users extends CI_Controller {
     function __construct() {
         parent::__construct();
 		$this->load->library('form_validation');		
-		$this->load->helper(array('form','url','codegen_helper'));
+		$this->load->helper(array('form','url','codegen_helper','string'));
 		$this->load->model('codegen_model','',TRUE);
 	}	
 	
