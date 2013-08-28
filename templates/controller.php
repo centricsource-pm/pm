@@ -60,8 +60,12 @@ class {controller_name} extends CI_Controller {
 				$this->data['custom_error'] = '<div class="form_error"><p>An Error Occured.</p></div>';
 
 			}
-		}		   
-		$this->load->view('{view}_add', $this->data);   
+		}	
+		
+		$this->load->view('header');
+	   $this->load->view('{view}_add', $this->data);
+	   $this->load->view('footer');	   
+		   
         //$this->template->load('content', '{view}_add', $this->data);
     }	
     
@@ -92,7 +96,10 @@ class {controller_name} extends CI_Controller {
 
 		$this->data['result'] = $this->codegen_model->get('{table}','{fields_list}','{primaryKey} = '.$this->uri->segment(3),NULL,NULL,true);
 		
-		$this->load->view('{view}_edit', $this->data);		
+		$this->load->view('header');
+	   $this->load->view('{view}_edit', $this->data);	
+	   $this->load->view('footer');	 
+			
         //$this->template->load('content', '{view}_edit', $this->data);
     }
 	
